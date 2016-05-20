@@ -280,21 +280,22 @@
                 </ul>-->
             </div>
               <div class="col l6 s12">
-                  <form class="col s12" action="contact.php" method="post">
+                  <form class="col s12" onsubmit="sendMail()" method="post">
                       <div class="row">
                           <div class="input-field col s6">
                               <i class="mdi-action-account-circle prefix white-text"></i>
-                              <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                              <input id="firstname" name="name" type="text" class="validate white-text">
                               <label for="icon_prefix" class="white-text">First Name</label>
                           </div>
+                          <!--
                           <div class="input-field col s6">
                               <i class="mdi-communication-email prefix white-text"></i>
-                              <input id="icon_email" name="email" type="email" class="validate white-text">
+                              <input name="email" id="email" type="email" class="validate white-text">
                               <label for="icon_email" class="white-text">Your Email</label>
-                          </div>
+                          </div>-->
                           <div class="input-field col s12">
                               <i class="mdi-editor-mode-edit prefix white-text"></i>
-                              <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                              <textarea id="message" name="message" class="materialize-textarea white-text"></textarea>
                               <label for="icon_prefix2" class="white-text">Message</label>
                           </div>
                           <div class="col offset-s7 s5">
@@ -341,6 +342,6 @@
   <!--  Scripts-->
   <script src="min/plugin-min.js"></script>
   <script src="min/custom-min.js"></script>
-
+  <script src="js/sendMail.js"></script>
   </body>
 </html>
