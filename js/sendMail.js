@@ -11,8 +11,8 @@ function sendMail()
 
     $.ajax({
       type: "POST",
-      //url: "http://golocoapp.com:1337/parse/functions/get_events",
-      url: "http://localhost:1337/parse/functions/send_mail",
+      url: "http://golocoapp.com:1337/parse/functions/send_mail",
+      //url: "http://localhost:1337/parse/functions/send_mail",
       headers: {
         "X-Parse-Application-Id": "g0l0c0",
       },
@@ -25,6 +25,10 @@ function sendMail()
       },
       success: function(data, textStatus, jqXHR) {
         console.log(data);
+        alert("Thanks for contacting me! Will be in touch soon.");
+        document.getElementById("message").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("firstname").value = "";
       },
       dataType: "json",
     });
