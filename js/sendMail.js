@@ -11,7 +11,7 @@ function sendMail()
 
     $.ajax({
       type: "POST",
-      url: "http://golocoapp.com:1337/parse/functions/send_mail",
+      url: "http://milean.co:1337/parse/functions/send_mail",
       //url: "http://localhost:1337/parse/functions/send_mail",
       headers: {
         "X-Parse-Application-Id": "g0l0c0",
@@ -19,7 +19,7 @@ function sendMail()
       data: {
         to: "mystecstudios@gmail.com",
         from: yourEmail,
-        subject: "DJ Mystec - Site Lead from " + subject,
+        subject: "Milean.co - Site Lead from " + subject + " with email " + yourEmail + ". ",
         text: yourMessage,
         html: yourMessage,
       },
