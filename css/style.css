@@ -20,6 +20,8 @@
     min-height: 632px;
     max-height: 864px;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("../img/dj/dj_headphone_tt_1.jpg");
     /* background-color: #000; */
 }
