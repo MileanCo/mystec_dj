@@ -79,6 +79,10 @@ nav ul a {
     padding: 0px 15px;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
 .cd-headline.type .cd-words-wrapper {
     vertical-align: top;
     overflow: hidden;
